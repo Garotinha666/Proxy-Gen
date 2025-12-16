@@ -1,4 +1,4 @@
-# Proxy Generator - Configuration Example
+# Vaixourar Proxy Generator - Configuration Example
 # Copie este arquivo para config.py e ajuste conforme necessário
 
 # ===== SCAN CONFIGURATION =====
@@ -15,7 +15,7 @@ TARGET_IPS = 1000  # Ajuste conforme necessário
 # ===== OUTPUT CONFIGURATION =====
 
 # Nome do arquivo de saída
-OUTPUT_FILENAME = "VeloraProxies2.txt"
+OUTPUT_FILENAME = "VaixourarProxies2.txt"
 
 # Salvar no Desktop? (True/False)
 SAVE_TO_DESKTOP = True
@@ -68,7 +68,7 @@ BATCH_DELAY = 0.1
 SAVE_STATISTICS = True
 
 # Nome do arquivo de estatísticas
-STATS_FILENAME = "velora_stats.json"
+STATS_FILENAME = "vaixourar_stats.json"
 
 # ===== SAFETY SETTINGS =====
 
