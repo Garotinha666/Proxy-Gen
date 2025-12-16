@@ -69,7 +69,6 @@ Proxies salvos em:
 - 🏢 Rede corporativa/universidade
 - 🌐 Internet de terceiros sem autorização
 - 💼 Uso comercial ou produção
-- 🔍 Busca rápida de proxies (use Proxy Scraper)
 
 ---
 
@@ -138,26 +137,6 @@ Invoke-WebRequest -Uri "https://httpbin.org/ip" -Proxy "http://IP:PORTA"
 | IP bloqueado | Use VPN ou rede própria |
 | Erro de permissão | Execute como admin/sudo |
 | Script trava | Ctrl+C para parar, ajuste config |
-
----
-
-## 💡 Dica Final
-
-**Para obter proxies de forma prática:**
-
-❌ **NÃO use** este Vaixourar (lento, baixa taxa, arriscado)
-
-✅ **USE** o Proxy Scraper (rápido, legal, alta taxa)
-
-```bash
-python proxy_scraper.py  # Outro script disponível
-```
-
-O Proxy Scraper busca de listas públicas e tem:
-- ⚡ 10x mais rápido
-- 🎯 100x mais proxies
-- ✅ Totalmente legal
-- 🛡️ Sem riscos
 
 ---
 
