@@ -7,10 +7,10 @@ import platform
 import ipaddress
 from asyncio import Lock
 
-class VeloraProxyGen:
+class VaixourarProxyGen:
     def __init__(self):
         self.desktop_path = self.get_desktop_path()
-        self.output_file = os.path.join(self.desktop_path, "VeloraProxies2.txt")
+        self.output_file = os.path.join(self.desktop_path, "VaixourarProxies2.txt")
         print(f"File: {self.output_file}")
         
         self.ports = self.generate_elite_ports()
@@ -126,22 +126,22 @@ class VeloraProxyGen:
 
     async def run_elite_scan(self, target_ips=1000):
         print(r"""
-██╗   ██╗███████╗██╗      ██████╗ ██████╗  █████╗                        
-██║   ██║██╔════╝██║     ██╔═══██╗██╔══██╗██╔══██╗                       
-██║   ██║█████╗  ██║     ██║   ██║██████╔╝███████║                       
-╚██╗ ██╔╝██╔══╝  ██║     ██║   ██║██╔══██╗██╔══██║                       
- ╚████╔╝ ███████╗███████╗╚██████╔╝██║  ██║██║  ██║                       
-  ╚═══╝  ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝                       
-                                                                         
-██████╗ ██████╗  ██████╗ ██╗  ██╗██╗   ██╗     ██████╗ ███████╗███╗   ██╗
-██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗ ██╔╝    ██╔════╝ ██╔════╝████╗  ██║
-██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚████╔╝     ██║  ███╗█████╗  ██╔██╗ ██║
-██╔═══╝ ██╔══██╗██║   ██║ ██╔██╗   ╚██╔╝      ██║   ██║██╔══╝  ██║╚██╗██║
-██║     ██║  ██║╚██████╔╝██╔╝ ██╗   ██║       ╚██████╔╝███████╗██║ ╚████║
-╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝        ╚═════╝ ╚══════╝╚═╝  ╚═══╝
+██╗   ██╗ █████╗ ██╗██╗  ██╗ ██████╗ ██╗   ██╗██████╗  █████╗ ██████╗ 
+██║   ██║██╔══██╗██║╚██╗██╔╝██╔═══██╗██║   ██║██╔══██╗██╔══██╗██╔══██╗
+██║   ██║███████║██║ ╚███╔╝ ██║   ██║██║   ██║██████╔╝███████║██████╔╝
+╚██╗ ██╔╝██╔══██║██║ ██╔██╗ ██║   ██║██║   ██║██╔══██╗██╔══██║██╔══██╗
+ ╚████╔╝ ██║  ██║██║██╔╝ ██╗╚██████╔╝╚██████╔╝██║  ██║██║  ██║██║  ██║
+  ╚═══╝  ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝
+                                                                        
+        ██████╗ ██████╗  ██████╗ ██╗  ██╗██╗   ██╗     ██████╗ ███████╗███╗   ██╗
+        ██╔══██╗██╔══██╗██╔═══██╗╚██╗██╔╝╚██╗ ██╔╝    ██╔════╝ ██╔════╝████╗  ██║
+        ██████╔╝██████╔╝██║   ██║ ╚███╔╝  ╚████╔╝     ██║  ███╗█████╗  ██╔██╗ ██║
+        ██╔═══╝ ██╔══██╗██║   ██║ ██╔██╗   ╚██╔╝      ██║   ██║██╔══╝  ██║╚██╗██║
+        ██║     ██║  ██║╚██████╔╝██╔╝ ██╗   ██║       ╚██████╔╝███████╗██║ ╚████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝        ╚═════╝ ╚══════╝╚═╝  ╚═══╝
 """)
         print("Dev: uvq (Modified Version)")
-        print("Velora Proxy Gen Starting......")
+        print("Vaixourar Proxy Gen Starting......")
         print("⚠️  AVISO: Esta ferramenta faz port scanning massivo")
         print("⚠️  Use apenas para fins educacionais em redes próprias")
         print("-" * 50)
@@ -232,7 +232,7 @@ async def main():
         target = input("Quantos IPs escanear? (padrão: 500): ").strip()
         target = int(target) if target else 500
         
-        scanner = VeloraProxyGen()
+        scanner = VaixourarProxyGen()
         await scanner.run_elite_scan(target_ips=target)
         
     except KeyboardInterrupt:
