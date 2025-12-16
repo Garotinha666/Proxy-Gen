@@ -1,0 +1,20 @@
+# Velora Proxy Generator - Requirements
+# Maioria das dependências são bibliotecas padrão do Python
+
+# Não há dependências externas obrigatórias!
+# O script usa apenas bibliotecas padrão:
+# - asyncio (padrão Python 3.7+)
+# - socket (padrão)
+# - random (padrão)
+# - time (padrão)
+# - os (padrão)
+# - platform (padrão)
+# - ipaddress (padrão Python 3.3+)
+
+# Python 3.7+ é necessário para asyncio moderno
+# Verifique sua versão: python --version
+
+# Caso queira adicionar funcionalidades extras (opcionais):
+# colorama>=0.4.6  # Para cores no terminal (Windows)
+# tqdm>=4.65.0     # Para barra de progresso
+# requests>=2.31.0 # Se quiser validar proxies encontrados
