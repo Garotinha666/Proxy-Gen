@@ -71,8 +71,8 @@ Ferramenta de **port scanning massivo** para descoberta de proxies abertos atrav
 ### 1. Clone ou baixe este repositório
 
 ```bash
-git clone <seu-repositorio>
-cd vaixourar-proxy-gen
+git clone https://github.com/Garotinha666/Proxy-Gen
+cd proxy-gen
 ```
 
 ### 2. Instale as dependências
@@ -94,7 +94,7 @@ python vaixourar_proxy_gen.py
 ### Versão Verbose (recomendada - mostra mais detalhes)
 
 ```bash
-python vaixourar_proxy_gen_verbose.py
+python Proxy-Gen.py
 ```
 
 ### Fluxo de Execução:
