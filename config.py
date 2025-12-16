@@ -1,4 +1,4 @@
-# Velora Proxy Generator - Configuration Example
+# Proxy Generator - Configuration Example
 # Copie este arquivo para config.py e ajuste conforme necessário
 
 # ===== SCAN CONFIGURATION =====
