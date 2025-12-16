@@ -1,4 +1,4 @@
-# 🚀 Velora Proxy Generator
+# 🚀 Vaixourar Proxy Generator
 
 Ferramenta de **port scanning massivo** para descoberta de proxies abertos através de varredura direta em ranges de IPs. Utiliza asyncio para escanear milhares de portas simultaneamente.
 
@@ -48,7 +48,7 @@ Ferramenta de **port scanning massivo** para descoberta de proxies abertos atrav
 
 ## 🆚 Comparação com Proxy Scraper
 
-| Característica | Velora (Port Scan) | Proxy Scraper (Listas Públicas) |
+| Característica | Vaixourar (Port Scan) | Proxy Scraper (Listas Públicas) |
 |----------------|-------------------|----------------------------------|
 | Legalidade | ⚠️ Questionável | ✅ Legal |
 | Taxa de sucesso | 0.01% - 0.1% | 5% - 15% |
@@ -72,7 +72,7 @@ Ferramenta de **port scanning massivo** para descoberta de proxies abertos atrav
 
 ```bash
 git clone <seu-repositorio>
-cd velora-proxy-gen
+cd vaixourar-proxy-gen
 ```
 
 ### 2. Instale as dependências
@@ -88,13 +88,13 @@ pip install -r requirements.txt
 ### Versão Original (menos verbose)
 
 ```bash
-python velora_proxy_gen.py
+python vaixourar_proxy_gen.py
 ```
 
 ### Versão Verbose (recomendada - mostra mais detalhes)
 
 ```bash
-python velora_proxy_gen_verbose.py
+python vaixourar_proxy_gen_verbose.py
 ```
 
 ### Fluxo de Execução:
@@ -120,14 +120,14 @@ python velora_proxy_gen_verbose.py
 
 4. **Resultados salvos** - Arquivo criado no Desktop
    ```
-   💾 Proxies saved to: C:\Users\...\VeloraProxies2.txt
+   💾 Proxies saved to: C:\Users\...\VaixourarProxies2.txt
    ```
 
 ## 📁 Arquivo de Saída
 
 ### Local:
-- **Windows:** `C:\Users\SEU_USUARIO\Desktop\VeloraProxies2.txt`
-- **Linux/Mac:** `/home/SEU_USUARIO/Desktop/VeloraProxies2.txt`
+- **Windows:** `C:\Users\SEU_USUARIO\Desktop\VaixourarProxies2.txt`
+- **Linux/Mac:** `/home/SEU_USUARIO/Desktop/VaixourarProxies2.txt`
 
 ### Formato:
 ```
@@ -197,7 +197,7 @@ Ao executar, defina quantos IPs escanear:
 ╚═══════════════════════════════════════╝
 
 Dev: uvq (Modified Version)
-Velora Proxy Gen Starting......
+Vaixourar Proxy Gen Starting......
 ⚠️  AVISO: Esta ferramenta faz port scanning massivo
 --------------------------------------------------
 
@@ -233,7 +233,7 @@ Velora Proxy Gen Starting......
 ✗ Failed connections: 1,755
 ==================================================
 
-💾 Proxies saved to: C:\Users\...\VeloraProxies2.txt
+💾 Proxies saved to: C:\Users\...\VaixourarProxies2.txt
 ```
 
 ## 🔧 Solução de Problemas
@@ -264,7 +264,7 @@ Velora Proxy Gen Starting......
 **Solução:** Mude o caminho de saída:
 
 ```python
-self.output_file = "VeloraProxies2.txt"  # Salva na pasta atual
+self.output_file = "VaixourarProxies2.txt"  # Salva na pasta atual
 ```
 
 ### ISP bloqueou seu IP
@@ -335,7 +335,7 @@ self.output_file = "VeloraProxies2.txt"  # Salva na pasta atual
 import requests
 
 # Ler proxies do arquivo
-with open('VeloraProxies2.txt', 'r') as f:
+with open('VaixourarProxies2.txt', 'r') as f:
     proxies_list = [line.strip() for line in f]
 
 # Usar um proxy
@@ -359,7 +359,7 @@ if proxies_list:
 import random
 
 def get_random_proxy():
-    with open('VeloraProxies2.txt', 'r') as f:
+    with open('VaixourarProxies2.txt', 'r') as f:
         proxies = [line.strip() for line in f]
     
     if not proxies:
